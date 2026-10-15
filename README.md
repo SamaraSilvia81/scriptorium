@@ -1,81 +1,84 @@
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="_assets/banners/banner-topo-claro.webp">
+  <img src="_assets/banners/banner-topo.webp" alt="Scriptorium — onde se escreve o que o código não diz" width="100%">
+</picture>
+
 <div align="center">
 
-# Documentação na Prática
-
 ### Estudos, referências e casos reais sobre documentação técnica.
-**Porque software bom que ninguém entende continua sendo software difícil de usar.**
 
 ![Status](https://img.shields.io/badge/status-em%20construção-972FFF?style=for-the-badge)
 ![Formato](https://img.shields.io/badge/formato-docs--as--code-171717?style=for-the-badge)
 ![Idioma](https://img.shields.io/badge/idioma-pt--BR-171717?style=for-the-badge)
 
-[Fundamentos](fundamentos/) · [Docs-as-code](docs-as-code/) · [Na prática](na-pratica/) · [Casos e referências](casos-e-referencias/) · [Engenharia de software](engenharia-software/)
+[Fundamentos](01-fundamentos/) · [Docs-as-code](02-docs-as-code/) · [Na prática](03-na-pratica/) · [Casos](04-casos/) · [Modelos](90-modelos/)
 
-[Comece por aqui](fundamentos/por-que-documentar.md) · [Checklist de README](na-pratica/checklist-readme.md) · [Como contribuir](CONTRIBUTING.md)
+[Comece por aqui](01-fundamentos/NOT-001-por-que-documentar.md) · [Padrão do acervo](PADRAO.md) · [Como contribuir](CONTRIBUTING.md)
 
 </div>
 
 ---
 
-<h3> $ sobre o projeto </h3>
+### $ sobre o projeto
 
-Este repositório nasceu da vontade de reunir, em um só lugar, referências, aprendizados e exemplos sobre **documentação técnica** — sem limitar a conversa apenas à escrita de arquivos README.
+Um *scriptorium* era a sala dos mosteiros medievais onde se escreviam, copiavam e guardavam manuscritos. Este é um scriptorium para **documentação técnica**: um lugar para reunir estudos, referências, guias e casos reais sobre como documentar software — e por que isso importa.
 
-A ideia é explorar como a documentação se conecta ao desenvolvimento de software: desde a experiência de quem precisa entender e manter um projeto até decisões de arquitetura, APIs, processos de equipe e práticas de *docs-as-code*.
+A ideia é explorar como a documentação se conecta ao desenvolvimento: da experiência de quem precisa entender e manter um projeto até decisões de arquitetura, processos de equipe e práticas de *docs-as-code*.
 
-O conteúdo é construído aos poucos, conforme novos assuntos são estudados e boas referências aparecem pelo caminho.
+O acervo cresce aos poucos, sem ordem obrigatória. Quando um tema novo aparece, ele entra aqui.
 
-> Não é um manual definitivo. É um espaço vivo de estudo, organização e compartilhamento de conhecimento.
+> Não é um manual definitivo. É um caderno de estudo em público.
 
-<h3> $ por onde começar </h3>
+### $ documentos
+
+| Código | Título | Tipo | Atualizado |
+|---|---|---|---|
+| [`NOT-001`](01-fundamentos/NOT-001-por-que-documentar.md) | Por que documentar — e por que a gente sempre deixa pra depois | Nota de estudo | 15/10/2026 |
+| [`NOT-002`](01-fundamentos/NOT-002-diataxis.md) | Diátaxis: os quatro tipos de documentação | Nota de estudo | 15/10/2026 |
+| [`NOT-003`](02-docs-as-code/NOT-003-o-que-e-docs-as-code.md) | O que é docs-as-code | Nota de estudo | 15/10/2026 |
+| [`GUI-001`](03-na-pratica/GUI-001-checklist-readme.md) | Checklist de README | Guia prático | 15/10/2026 |
+| [`CAS-001`](04-casos/CAS-001-pinterest-docs-as-code.md) | Pinterest e a adoção de docs-as-code | Registro de caso | 15/10/2026 |
+
+**No radar:** documentação como dívida técnica · registros de decisão arquitetural (ADR) · documentação em arquiteturas de microfrontends.
+
+### $ por onde começar
 
 | Se você quer... | Leia |
-|:---|:---|
-| Entender por que documentação importa | [Por que documentar](fundamentos/por-que-documentar.md) |
-| Organizar a documentação de um projeto | [Diátaxis: os quatro tipos de documentação](fundamentos/diataxis.md) |
-| Tratar documentação como parte do código | [O que é docs-as-code](docs-as-code/o-que-e-docs-as-code.md) |
-| Melhorar o README do seu projeto agora | [Checklist de README](na-pratica/checklist-readme.md) |
-| Ver o que aconteceu em empresas reais | [Pinterest e docs-as-code](casos-e-referencias/pinterest-docs-as-code.md) |
+|---|---|
+| Entender por que documentação importa | [`NOT-001`](01-fundamentos/NOT-001-por-que-documentar.md) |
+| Organizar a documentação de um projeto | [`NOT-002`](01-fundamentos/NOT-002-diataxis.md) |
+| Tratar documentação como parte do código | [`NOT-003`](02-docs-as-code/NOT-003-o-que-e-docs-as-code.md) |
+| Melhorar o README do seu projeto agora | [`GUI-001`](03-na-pratica/GUI-001-checklist-readme.md) |
+| Ver o que aconteceu numa empresa real | [`CAS-001`](04-casos/CAS-001-pinterest-docs-as-code.md) |
 
-<h3> $ conteúdos </h3>
-
-- [x] [Por que documentar — e por que a gente sempre deixa pra depois](fundamentos/por-que-documentar.md)
-- [x] [Diátaxis: os quatro tipos de documentação](fundamentos/diataxis.md)
-- [x] [O que é docs-as-code](docs-as-code/o-que-e-docs-as-code.md)
-- [x] [Checklist de README](na-pratica/checklist-readme.md)
-- [x] [Caso: Pinterest e a adoção de docs-as-code](casos-e-referencias/pinterest-docs-as-code.md)
-- [ ] [Caso: Squarespace e a documentação de API](casos-e-referencias/squarespace-api.md) *(em apuração)*
-- [ ] Documentação como dívida técnica
-- [ ] Registro de decisões arquiteturais (ADR)
-- [ ] Documentação em arquiteturas de microfrontends
-
-<h3> $ estrutura </h3>
+### $ estrutura
 
 ```text
-documentacao-na-pratica/
-├── fundamentos/          # conceitos e princípios
-├── docs-as-code/         # práticas, ferramentas e fluxos
-├── na-pratica/           # exemplos, checklists e modelos
-├── casos-e-referencias/  # experiências externas e fontes
-├── engenharia-software/  # temas relacionados
-├── templates/            # modelos reutilizáveis
+scriptorium/
+├── 01-fundamentos/      conceitos e princípios          NOT
+├── 02-docs-as-code/     práticas, ferramentas e fluxos  NOT
+├── 03-na-pratica/       guias e checklists              GUI
+├── 04-casos/            experiências públicas           CAS
+├── 90-modelos/          modelos de documento            MOD
+├── _assets/             banners, diagramas e gerador
+├── PADRAO.md            como o acervo se organiza
 └── README.md
 ```
 
-<h3> $ como este repositório evolui </h3>
+Cada documento tem um código (`NOT-001`, `CAS-001`...), uma tabela de metadados e um link para o próprio histórico. O padrão completo está em [`PADRAO.md`](PADRAO.md).
 
-- Os materiais são adicionados gradualmente — item marcado no índice é item com conteúdo.
-- Cada tema traz referências para consulta e leitura complementar.
-- Experiências e opiniões são identificadas como tais, sem serem apresentadas como resultados científicos.
+### $ combinados
+
 - Casos externos sempre vêm com link para a fonte original.
+- Opinião e experiência pessoal aparecem identificadas como tal — não como resultado científico.
+- Material de trabalho, de cliente ou confidencial não entra (ver [padrão](PADRAO.md#7-o-que-não-entra)).
+- A estrutura muda para acompanhar o conteúdo, não o contrário.
 
-<h3> $ participe da conversa </h3>
+### $ participe da conversa
 
 Você já encontrou uma documentação que facilitou muito um projeto — ou a falta dela que tornou tudo mais difícil?
 
-Ideias, experiências, ferramentas e referências são bem-vindas. Veja o [guia de contribuição](CONTRIBUTING.md).
-
----
+Sugestões de temas, referências e casos públicos são bem-vindos. Veja o [guia de contribuição](CONTRIBUTING.md).
 
 <div align="center">
 
@@ -84,3 +87,8 @@ Ideias, experiências, ferramentas e referências são bem-vindas. Veja o [guia 
 Feito por [Samara Silvia](https://github.com/SamaraSilvia81)
 
 </div>
+
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="_assets/banners/banner-rodape-claro.webp">
+  <img src="_assets/banners/banner-rodape.webp" alt="Scriptorium · rodapé" width="100%">
+</picture>
